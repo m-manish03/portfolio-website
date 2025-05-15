@@ -4,8 +4,8 @@ import "./globals.css"
 export const metadata = {
   title: "Manish's Portfolio",
   description: "A minimalistic developer portfolio",
-  icons:{icon:'/icon.png'},
-  generator: 'v0.dev'
+  icons:{icon:'/favicon.png'},
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({ children }) {

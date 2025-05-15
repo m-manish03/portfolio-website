@@ -59,13 +59,15 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div
               ref={imageRef}
-              className="relative h-80 md:h-96 rounded-lg overflow-hidden border-2 border-gray-200 dark:border-gray-800 opacity-0 animate-scale stagger-1"
+              className="relative h-auto max-w-md mx-auto rounded-lg overflow-hidden border-2 border-gray-200 dark:border-gray-800 opacity-0 animate-scale stagger-1"
             >
               <Image
-                src="/pp.jpg?height=300&width=400"
-                alt="Developer portrait"
-                fill
-                className="object-cover"
+                src="/images/profile.jpg"
+                alt="Manish Reddy - Developer portrait"
+                width={400}
+                height={400}
+                className="object-contain"
+                priority
               />
             </div>
 
@@ -78,7 +80,7 @@ export default function About() {
                       Computer Science and Engineering
                     </span>{" "}
                     undergraduate from{" "}
-                    <span className="text-[#64ffda] dark:text-[#64ffda] font-medium">Vidya Jyothi Institute of Technology, Hyderabad</span>. I'm deeply
+                    <span className="text-[#64ffda] dark:text-[#64ffda] font-medium">VJIT, Hyderabad</span>. I'm deeply
                     passionate about technology and continuously exploring the fields of{" "}
                     <span className="text-[#64ffda] dark:text-[#64ffda] font-medium">full-stack development</span>,{" "}
                     <span className="text-[#64ffda] dark:text-[#64ffda] font-medium">data science</span>, and{" "}

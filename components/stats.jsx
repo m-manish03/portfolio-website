@@ -7,7 +7,7 @@ import {
   GitCommit,
   GitPullRequest,
   Star,
-  GitlabIcon as GitHub,
+  Github,
   Code,
   Award,
   Trophy,
@@ -78,10 +78,10 @@ export default function Stats() {
 
   // GitHub stats (these would normally come from an API)
   const githubStats = {
-    repos: 15,
-    stars: 48,
-    commits: 527,
-    prs: 73,
+    repos: 21,
+    stars: 31,
+    commits: 423,
+    prs: 74,
   }
 
   // Months for GitHub contribution graph
@@ -210,7 +210,7 @@ export default function Stats() {
                 <img
                   src="https://github.com/m-manish03.png"
                   alt="GitHub Profile"
-                  className="w-12 h-12 rounded-full mr-4"
+                  className="w-12 h-12 rounded-full mr-4 object-cover"
                 />
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white">m-manish03</h3>
@@ -341,12 +341,12 @@ export default function Stats() {
 
           <div className="text-center">
             <a
-              href="https://github.com/m-manish03"
+              href="https://github.com/madimanish14"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-900 dark:bg-gray-700 hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors duration-300"
             >
-              <GitHub className="h-4 w-4 mr-2" />
+              <Github className="h-4 w-4 mr-2" />
               View Full GitHub Profile
             </a>
           </div>
