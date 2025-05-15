@@ -1,11 +1,11 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { useTheme } from "./theme-provider"
+import { useTheme } from "@/context/theme-context"
 import { Moon, Sun, Menu, X } from "lucide-react"
 
 export default function Navbar() {
-  const { theme, setTheme, mounted } = useTheme()
+  const { theme, toggleTheme, mounted } = useTheme()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState("hero")
@@ -56,10 +56,6 @@ export default function Navbar() {
     { name: "Stats", section: "github-activity" },
     { name: "Contact", section: "contact" },
   ]
-
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark")
-  }
 
   return (
     <header
