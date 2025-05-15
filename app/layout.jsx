@@ -2,7 +2,7 @@ import { ThemeProvider } from "@/context/theme-context"
 import "./globals.css"
 
 export const metadata = {
-  title: "Developer Portfolio",
+  title: "Manish's Portfolio",
   description: "A minimalistic developer portfolio",
     generator: 'v0.dev'
 }
