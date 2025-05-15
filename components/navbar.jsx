@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { useTheme } from "@/components/theme-provider"
+import { useTheme } from "./theme-provider"
 import { Moon, Sun, Menu, X } from "lucide-react"
 
 export default function Navbar() {

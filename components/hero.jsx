@@ -72,7 +72,7 @@ export default function Hero() {
               }}
             >
               <span className="bg-gradient-to-r from-[#FC466B] to-[#3F5EFB] text-transparent bg-clip-text">
-                John Doe
+                Manish Reddy
               </span>
             </div>
           </h1>
@@ -85,7 +85,11 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 opacity-0 animate-slide-up stagger-3">
-            <button className="px-6 py-3 relative group overflow-hidden rounded-md font-medium flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105">
+            <a
+              href="/resume/manish-reddy-resume.pdf"
+              download="Manish_Reddy_Resume.pdf"
+              className="px-6 py-3 relative group overflow-hidden rounded-md font-medium flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105"
+            >
               {/* Animated border background */}
               <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-[#FC466B] to-[#3F5EFB] animate-gradient-x"></span>
 
@@ -97,7 +101,7 @@ export default function Hero() {
                 <Download className="h-4 w-4 text-[#FC466B]" />
                 Download Resume
               </span>
-            </button>
+            </a>
 
             <button
               onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}
@@ -118,7 +122,7 @@ export default function Hero() {
               <span className="sr-only">GitHub</span>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/manish-reddy-390b7825b/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all duration-300 transform hover:scale-125"
@@ -136,7 +140,7 @@ export default function Hero() {
               <span className="sr-only">Twitter</span>
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:manish14.official@gmail.com"
               className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all duration-300 transform hover:scale-125"
             >
               <Mail className="h-6 w-6" />

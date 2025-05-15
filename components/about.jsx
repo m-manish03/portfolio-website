@@ -73,12 +73,12 @@ export default function About() {
               <div ref={textRef} className="opacity-0 space-y-6">
                 <div className="space-y-4">
                   <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed animate-word-fade">
-                    I'm John Doe, a{" "}
+                    I'm Madi Manish Reddy, a{" "}
                     <span className="text-[#64ffda] dark:text-[#64ffda] font-medium">
                       Computer Science and Engineering
                     </span>{" "}
                     undergraduate from{" "}
-                    <span className="text-[#64ffda] dark:text-[#64ffda] font-medium">JNTU, Hyderabad</span>. I'm deeply
+                    <span className="text-[#64ffda] dark:text-[#64ffda] font-medium">VJIT, Hyderabad</span>. I'm deeply
                     passionate about technology and continuously explore the fields of{" "}
                     <span className="text-[#64ffda] dark:text-[#64ffda] font-medium">full-stack development</span>,{" "}
                     <span className="text-[#64ffda] dark:text-[#64ffda] font-medium">data science</span>, and{" "}
