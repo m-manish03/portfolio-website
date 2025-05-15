@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import Image from "next/image"
 
 export default function About() {
   const aboutRef = useRef(null)
@@ -61,13 +60,11 @@ export default function About() {
               ref={imageRef}
               className="relative h-auto max-w-md mx-auto rounded-lg overflow-hidden border-2 border-gray-200 dark:border-gray-800 opacity-0 animate-scale stagger-1"
             >
-              <Image
+              {/* Using standard img tag instead of Next.js Image component */}
+              <img
                 src="/images/profile.jpg"
                 alt="Manish Reddy - Developer portrait"
-                width={400}
-                height={400}
-                className="object-contain"
-                priority
+                className="w-full h-auto object-contain"
               />
             </div>
 

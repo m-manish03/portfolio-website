@@ -211,11 +211,14 @@ export default function Stats() {
                   src="https://github.com/m-manish03.png"
                   alt="GitHub Profile"
                   className="w-12 h-12 rounded-full mr-4 object-cover"
+                  onError={(e) => {
+                    e.target.src = "/placeholder.svg?height=48&width=48"
+                  }}
                 />
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white">m-manish03</h3>
                   <a
-                    href="https://github.com/m-manish03"
+                    href="https://github.com/m-manish03/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-500 hover:text-blue-700 dark:hover:text-blue-300 text-sm"

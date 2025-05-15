@@ -153,10 +153,14 @@ function ProjectCard({ project, index }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="relative h-56 overflow-hidden">
+        {/* Using standard img tag instead of Next.js Image component */}
         <img
           src={project.image || "/placeholder.svg"}
           alt={project.title}
           className={`w-full h-full object-cover transition-transform duration-700 ${isHovered ? "scale-110" : "scale-100"}`}
+          onError={(e) => {
+            e.target.src = "/placeholder.svg?height=300&width=500"
+          }}
         />
         <div
           className={`absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center gap-4 transition-opacity duration-500 ${isHovered ? "opacity-100" : "opacity-0"}`}
