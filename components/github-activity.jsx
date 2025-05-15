@@ -36,10 +36,10 @@ export default function GitHubActivity() {
 
   // GitHub stats (these would normally come from an API)
   const githubStats = {
-    repos: 15,
-    stars: 48,
-    commits: 527,
-    prs: 73,
+    repos: 21,
+    stars: 31,
+    commits: 423,
+    prs: 74,
   }
 
   // Generate a simulated contribution graph
