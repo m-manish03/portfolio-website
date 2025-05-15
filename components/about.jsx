@@ -62,7 +62,7 @@ export default function About() {
               className="relative h-80 md:h-96 rounded-lg overflow-hidden border-2 border-gray-200 dark:border-gray-800 opacity-0 animate-scale stagger-1"
             >
               <Image
-                src="/profile.jpg?height=400&width=400"
+                src="/profile.jpg?height=400&width=300"
                 alt="Developer portrait"
                 fill
                 className="object-cover"
